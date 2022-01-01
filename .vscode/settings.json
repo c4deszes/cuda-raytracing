@@ -1,0 +1,9 @@
+{
+	"files.associations": {
+		"glu.h": "c",
+		"cuda_model.cuh": "c",
+		"stdhead.h": "c",
+		"cuda_defs.cuh": "c",
+		"wrapper.h": "c"
+	}
+}
