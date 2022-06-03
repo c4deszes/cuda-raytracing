@@ -96,7 +96,7 @@ __global__ void trace_ray(Camera camera, long long* alloc , uint32_t* framebuffe
 						currentModel2 = getGeometryBuffer(m, alloc);
 						if (mesh_intersection(currentModel2, alloc, &light_cast, &light_t, &tri) && light_t < 1.0) {
 							light_blocked = true;
-							//pixel = { 0,0,0 };
+							pixel = { 0,0,0 };
 						}
 					}
 				}

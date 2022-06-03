@@ -12,8 +12,7 @@ add_executable(raytracing
 	src/cuda/raytracer.cu
 )
 target_link_libraries(raytracing PRIVATE glfw glad OpenGL::GL)
-set_target_properties( raytracing
-                       PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
+set_target_properties(raytracing PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
 target_include_directories(raytracing PUBLIC include)
 set_property(TARGET raytracing PROPERTY CUDA_ARCHITECTURES 50-real)
 target_compile_features(raytracing PUBLIC cxx_std_11)

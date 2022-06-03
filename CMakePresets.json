@@ -7,15 +7,9 @@
     },
     "configurePresets": [
         {
-            "name": "default-other",
+            "name": "vstudio-default",
             "binaryDir": "${sourceDir}/build/${presetName}",
-			"environment": {
-				"PATH": "$penv{PATH};C:\\MinGW\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.1\\bin"
-			},
-            "generator": "Visual Studio 16 2019",
-            "cacheVariables": {
-                
-            }
+            "generator": "Visual Studio 16 2019"
         }
 	]
 }

@@ -39,30 +39,16 @@ Camera main_camera = {
 
 Light main_light = {
 	-1,
-	{ 300, 200, 100 },
+	{ 300, 100, 200 },
 	{ 1, 1, 1 },
 	400,
 	POINT_LIGHT,
 	{ 0,0,0 }
-};
-
-Light sec_light = {
-	-1,
-	{ 300, 200, 200},
-	{ 1, 1, 1 },
-	400,
-	POINT_LIGHT,
-	{ 0,0,0 }
-};
-
-List_Light lights2 = {
-	&sec_light,
-	NULL
 };
 
 List_Light lights = {
 	&main_light,
-	&lights2
+	NULL
 };
 
 Material diffuse_red = {
