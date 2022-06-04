@@ -1,9 +1,14 @@
 # CUDA raytracer
 
 > This is a bare minimum raytracing renderer written in C and CUDA as side project in first semester
-> uni. You can provide triangle based meshes, basic materials and lights.
+> uni. It can render triangle based meshes with Lambertian materials and point light sources.
+
+![Boxes](images/boxes.jpg)
 
 ## Building and running
+
+The CMake project targets a range of CUDA architecture so it should work with any recent NVidia GPU.
+However newer CUDA compilers may remove support for some of these older architectures and cards.
 
 ### Tools
 
