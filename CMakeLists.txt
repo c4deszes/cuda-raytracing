@@ -5,6 +5,8 @@ add_subdirectory(lib/glfw)
 add_subdirectory(lib/glad)
 find_package(OpenGL REQUIRED)
 
+add_subdirectory(cpu)
+
 add_executable(raytracing
 	src/main.c
 	src/cuda/cuda_defs.cu
